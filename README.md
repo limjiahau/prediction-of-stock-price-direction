@@ -19,17 +19,5 @@ Each dataset has the same format with the following 7 columns:
 - `Volume` - the amount of shares traded over the course of a trading day
 
 # Data Exploration
-<class 'pandas.core.frame.DataFrame'>
-RangeIndex: 4781 entries, 0 to 4780
-Data columns (total 7 columns):
- #   Column     Non-Null Count  Dtype  
----  ------     --------------  -----  
- 0   Date       4781 non-null   object 
- 1   Open       4781 non-null   float64
- 2   High       4781 non-null   float64
- 3   Low        4781 non-null   float64
- 4   Close      4781 non-null   float64
- 5   Adj Close  4781 non-null   float64
- 6   Volume     4781 non-null   int64  
-dtypes: float64(5), int64(1), object(1)
-memory usage: 261.6+ KB
+![image](https://user-images.githubusercontent.com/65124287/212928234-18f0d3de-12fc-4c22-a671-c156b21aed38.png)
+Mostly numerical columns (5 floats, 1 int) and an object column for Date. No null values.
