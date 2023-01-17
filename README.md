@@ -27,6 +27,7 @@ Let's plot the stock price as a function of time by:
 - passing the Date column as an argument for the x-axis and the
 - closing, opening, highest and lowest price for the y-axis.
 
+Train set 
 ![image](https://user-images.githubusercontent.com/65124287/212928481-05768f68-69ae-4545-a22c-be1720fec3e4.png)
 
 The prices are mainly overlapping with one another and has grown significantly over the years, starting at around $100 at the beginning of the century and rising to almost $700 13 years later.
@@ -38,8 +39,6 @@ Validation set
   
 ![image](https://user-images.githubusercontent.com/65124287/212929381-291645d7-2c80-4d10-87f7-8ad4a4a909a9.png)
 </p>
-
-
 
 Test set
 
