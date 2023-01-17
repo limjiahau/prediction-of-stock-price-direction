@@ -26,4 +26,5 @@ Mostly numerical columns (5 floats, 1 int) and an object column for Date. No nul
 Let's plot the stock price as a function of time by:
 - passing the Date column as an argument for the x-axis and the
 - closing, opening, highest and lowest price for the y-axis.
+
 ![image](https://user-images.githubusercontent.com/65124287/212928481-05768f68-69ae-4545-a22c-be1720fec3e4.png)
