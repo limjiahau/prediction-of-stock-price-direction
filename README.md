@@ -79,3 +79,31 @@ Contrary to our expectations, the model does not outperform the decision tree, i
 
 ## Gradient Boosting Ensemble
 The last ensemble technique I will be trying is gradient boosting. This algorithm sets up the stage for the next part, where I will try a deep learning approach to solve the problem. A gradient boosting classifier is structurally the same as any ensemble learner - it is a collection of base learners. The algorithm induces (learns) the trees one by one, and in each iteration, it gives greater weight to those instances that were wrongly misclassified, so the next tree would "pay more attention" while training on them. Sometimes this can improve performance.
+
+![image](https://user-images.githubusercontent.com/65124287/212932788-9aa4e6c8-7ced-49fd-8e5e-6864c66e4cb4.png)
+
+The gradient boosting classifier outperforms previous models and scored 0.55 AUC.
+
+It seems that gradient boosting works best for this data set. In the next section, I will train a deep learning model with an aim to outperform the baseline set here (AUC = 0.55).
+
+# Deep Learning Algorithm
+I used Google's open-source library Tensorflow for implementing a small neural network. 
+
+Keras is the most popular framework for designing deep learning models. In the next cell, I will implement a sequential neural network with:
+1. Normalization layer that scales the data to a common range
+2. A dense layer with 10 neurons and a ReLU activation function.
+3. A dropout layer with a 0.2 probability of dropping a neuron.
+4. Another dense layer with 5 neurons and ReLU activation function.
+5. An output layer of just one neuron with a sigmoid activation function (the same one mentioned in the logistic regression part above)
+
+To prevent overfitting, I am implementing two callbacks (functions to be called after each epoch):
+1. Learning rate scheduler that decays the learning rate as the number of epochs increases.
+2. Early stopping callback that stops training if the loss does not improve after a certain number of epochs
+
+The model trained for 50 epochs. I can see the change in the learning rate, which is due to the learning rate scheduler callback that I have implemented. The early stopping callback fired, at the 31st epoch, which means that the validation loss has not been improving over time. However, I observe that both the training and the validation AUC are very close to `0.5`, improving the overall score only over the logistic regression model.
+
+![image](https://user-images.githubusercontent.com/65124287/212942408-a2849f7c-7867-4fff-ab4a-c19e00fd6de7.png)
+
+The training loss starts high, falls steeply after the first epoch, and then remains pretty much equal, with very little improvement over time. The validation loss does not change, implying that the model is overfitting the training data. There are many possible reasons for this: too complex model, small data set, features that are not predictive, etc. The same situation is observed for the AUC metric in the plot below. The training AUC does vary, reaching its highest point at around `0.5108` in the first epoch, but the validation AUC remains fixed at `0.5000`.
+
+![image](https://user-images.githubusercontent.com/65124287/212942534-f161952f-e77f-46c7-9bf5-742911b9bb33.png)
