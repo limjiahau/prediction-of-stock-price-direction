@@ -100,7 +100,7 @@ To prevent overfitting, I am implementing two callbacks (functions to be called 
 1. Learning rate scheduler that decays the learning rate as the number of epochs increases.
 2. Early stopping callback that stops training if the loss does not improve after a certain number of epochs
 
-The model trained for 50 epochs. I can see the change in the learning rate, which is due to the learning rate scheduler callback that I have implemented. The early stopping callback fired, at the 31st epoch, which means that the validation loss has not been improving over time. However, I observe that both the training and the validation AUC are very close to `0.5`, improving the overall score only over the logistic regression model.
+The model trained for 50 epochs. I can see the change in the learning rate, which is due to the learning rate scheduler callback that I have implemented. The early stopping callback fired, at the 31st epoch, which means that the validation loss has not been improving over time. However, I observe that both the training and the validation AUC are very close to 0.5, improving the overall score only over the logistic regression model.
 
 ![image](https://user-images.githubusercontent.com/65124287/212942408-a2849f7c-7867-4fff-ab4a-c19e00fd6de7.png)
 
@@ -114,3 +114,7 @@ The gradient boosting classifier provided the best AUC score on the validation s
 ![image](https://user-images.githubusercontent.com/65124287/212942669-cd11f5ee-6707-46a9-892d-fb06fbb479b8.png)
 
 The gradient boosting classifier scored an AUC score of 0.55.
+
+This is a feature importance plot, which plots the importance of each feature with regards to the predictive performance of the model (the higher the value the more important the feature is for determining the value of the target variable).
+
+![image](https://user-images.githubusercontent.com/65124287/212943070-8b85202c-3ac9-43b5-b93b-0d4901b804fa.png)
