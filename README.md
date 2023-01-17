@@ -20,6 +20,7 @@ Each dataset has the same format with the following 7 columns:
 
 # Data Exploration
 ![image](https://user-images.githubusercontent.com/65124287/212928234-18f0d3de-12fc-4c22-a671-c156b21aed38.png)
+![image](https://user-images.githubusercontent.com/65124287/212928946-e9990e27-bceb-4bf6-ac8a-48291b3377c1.png)
 
 Mostly numerical columns (5 floats, 1 int) and an object column for Date. No null values.
 
