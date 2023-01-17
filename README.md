@@ -28,7 +28,7 @@ Let's plot the stock price as a function of time by:
 - closing, opening, highest and lowest price for the y-axis.
 
 <p align="center">
-#### Train set 
+**Train set**
   
 ![image](https://user-images.githubusercontent.com/65124287/212928481-05768f68-69ae-4545-a22c-be1720fec3e4.png)
 </p>
