@@ -19,6 +19,8 @@ Each dataset has the same format with the following 7 columns:
 - `Volume` - the amount of shares traded over the course of a trading day
 
 # Data Exploration
+Train set 
+
 ![image](https://user-images.githubusercontent.com/65124287/212928234-18f0d3de-12fc-4c22-a671-c156b21aed38.png)
 
 Mostly numerical columns (5 floats, 1 int) and an object column for Date. No null values.
