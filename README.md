@@ -43,9 +43,25 @@ Validation set
 ![image](https://user-images.githubusercontent.com/65124287/212929381-291645d7-2c80-4d10-87f7-8ad4a4a909a9.png)
 </p>
 
+The validation set has the same properties as the training set: no null values, clear column types, and a valid date range. The stock has also continued to grow during this period.
+
 <p align="center">
 Test set
 
 ![image](https://user-images.githubusercontent.com/65124287/212929462-d10b3df2-e624-420b-ad27-ff5714d9a61b.png)
 </p>
 
+The same can be applied for the test set. However, the stock is more volatile in this period despite it growing.
+
+# Machine Learning Algorithms 
+## Logistic Regression
+To calculate the AUC value and to plot the ROC curve
+
+![image](https://user-images.githubusercontent.com/65124287/212931992-77de4d77-2d31-42f1-91ef-d93e81c546eb.png)
+
+We can observe that Logistic regression does not work well for this problem. Having AUC < 0.5 means that the classifier is worse than just randomly guessing the output.
+
+## Decision Tree
+Decision trees deal better with non-linear spaces, so they might be able to produce a better model than logistic regression.
+
+![image](https://user-images.githubusercontent.com/65124287/212932105-e49177ae-80f3-4f1d-b9d3-96e59c01d3fa.png)
