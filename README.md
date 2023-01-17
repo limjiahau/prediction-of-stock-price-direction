@@ -28,7 +28,7 @@ Let's plot the stock price as a function of time by:
 - closing, opening, highest and lowest price for the y-axis.
 
 <p align="center">
-**Train set**
+Train set
   
 ![image](https://user-images.githubusercontent.com/65124287/212928481-05768f68-69ae-4545-a22c-be1720fec3e4.png)
 </p>
@@ -38,13 +38,14 @@ The prices are mainly overlapping with one another and has grown significantly o
 I will repeat the same analysis for the validation and testing set, to make sure that they follow a similar distribution and that there are no surprises/errors.
 
 <p align="center">
-#### Validation set
+Validation set
   
 ![image](https://user-images.githubusercontent.com/65124287/212929381-291645d7-2c80-4d10-87f7-8ad4a4a909a9.png)
 </p>
 
 <p align="center">
-#### Test set
+Test set
 
 ![image](https://user-images.githubusercontent.com/65124287/212929462-d10b3df2-e624-420b-ad27-ff5714d9a61b.png)
 </p>
+
