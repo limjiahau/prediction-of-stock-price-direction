@@ -65,3 +65,15 @@ We can observe that Logistic regression does not work well for this problem. Hav
 Decision trees deal better with non-linear spaces, so they might be able to produce a better model than logistic regression.
 
 ![image](https://user-images.githubusercontent.com/65124287/212932105-e49177ae-80f3-4f1d-b9d3-96e59c01d3fa.png)
+
+The decision tree outperforms the logistic regression model by 0.02, with an AUC of 0.51.
+
+## Random Forest
+Random forest is an ensemble model that builds multiple decision trees, each with a different (random) sub-set of attributes. It is generally expected that an ensemble model would outperform a base learner (i.e., the combination of predictions from many decision trees would be better / more stable than the prediction of just one decision tree).
+
+![image](https://user-images.githubusercontent.com/65124287/212932285-ba7b70be-644d-49d7-b92d-188f0aa7fb92.png)
+
+Contrary to our expectations, the model does not outperform the decision tree, it actually performs the same.
+
+## Gradient Boosting Ensemble
+The last ensemble technique I will be trying is gradient boosting. This algorithm sets up the stage for the next part, where I will try a deep learning approach to solve the problem. A gradient boosting classifier is structurally the same as any ensemble learner - it is a collection of base learners. The algorithm induces (learns) the trees one by one, and in each iteration, it gives greater weight to those instances that were wrongly misclassified, so the next tree would "pay more attention" while training on them. Sometimes this can improve performance.
