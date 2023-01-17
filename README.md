@@ -33,8 +33,9 @@ The prices are mainly overlapping with one another and has grown significantly o
 
 I will repeat the same analysis for the validation and testing set, to make sure that they follow a similar distribution and that there are no surprises/errors.
 
+<p align="center">
 Validation set
-
+</p>
 ![image](https://user-images.githubusercontent.com/65124287/212929381-291645d7-2c80-4d10-87f7-8ad4a4a909a9.png)
 
 Test set
