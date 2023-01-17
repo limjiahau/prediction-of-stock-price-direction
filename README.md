@@ -107,3 +107,10 @@ The model trained for 50 epochs. I can see the change in the learning rate, whic
 The training loss starts high, falls steeply after the first epoch, and then remains pretty much equal, with very little improvement over time. The validation loss does not change, implying that the model is overfitting the training data. There are many possible reasons for this: too complex model, small data set, features that are not predictive, etc. The same situation is observed for the AUC metric in the plot below. The training AUC does vary, reaching its highest point at around `0.5108` in the first epoch, but the validation AUC remains fixed at `0.5000`.
 
 ![image](https://user-images.githubusercontent.com/65124287/212942534-f161952f-e77f-46c7-9bf5-742911b9bb33.png)
+
+# Conclusion
+The gradient boosting classifier provided the best AUC score on the validation set. Next, I evaluated the performance of the gradient boosting classifier on the test set by calling plot_roc_curve with the test set. 
+
+![image](https://user-images.githubusercontent.com/65124287/212942669-cd11f5ee-6707-46a9-892d-fb06fbb479b8.png)
+
+The gradient boosting classifier scored an AUC score of 0.55.
