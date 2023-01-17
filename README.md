@@ -35,8 +35,7 @@ I will repeat the same analysis for the validation and testing set, to make sure
 
 <p align="center">
 Validation set
-
-![image](https://user-images.githubusercontent.com/65124287/212929381-291645d7-2c80-4d10-87f7-8ad4a4a909a9.png)
+  ![image](https://user-images.githubusercontent.com/65124287/212929381-291645d7-2c80-4d10-87f7-8ad4a4a909a9.png)
 </p>
 
 
