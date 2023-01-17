@@ -21,8 +21,6 @@ Each dataset has the same format with the following 7 columns:
 # Data Exploration
 ![image](https://user-images.githubusercontent.com/65124287/212928234-18f0d3de-12fc-4c22-a671-c156b21aed38.png)
 
-![image](https://user-images.githubusercontent.com/65124287/212928946-e9990e27-bceb-4bf6-ac8a-48291b3377c1.png)
-
 Mostly numerical columns (5 floats, 1 int) and an object column for Date. No null values.
 
 Let's plot the stock price as a function of time by:
@@ -30,3 +28,15 @@ Let's plot the stock price as a function of time by:
 - closing, opening, highest and lowest price for the y-axis.
 
 ![image](https://user-images.githubusercontent.com/65124287/212928481-05768f68-69ae-4545-a22c-be1720fec3e4.png)
+
+The prices are mainly overlapping with one another and has grown significantly over the years, starting at around $100 at the beginning of the century and rising to almost $700 13 years later.
+
+I will repeat the same analysis for the validation and testing set, to make sure that they follow a similar distribution and that there are no surprises/errors.
+
+Validation set
+
+![image](https://user-images.githubusercontent.com/65124287/212929381-291645d7-2c80-4d10-87f7-8ad4a4a909a9.png)
+
+Test set
+
+![image](https://user-images.githubusercontent.com/65124287/212929462-d10b3df2-e624-420b-ad27-ff5714d9a61b.png)
