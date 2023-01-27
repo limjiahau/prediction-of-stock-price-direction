@@ -55,6 +55,11 @@ Test set
 
 The same can be applied for the test set. However, the stock is more volatile in this period despite it growing.
 
+# Feature Engineering:
+- Calculated 3 and 7 Moving Average (MA), a stock indicator commonly used in technical analysis. 
+- Calculated direction of price from Opening to Closing.
+- Calculated price range from Lowest to Highest
+
 # Machine Learning Algorithms 
 ## Logistic Regression
 To calculate the AUC value and to plot the ROC curve
